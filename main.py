@@ -26,9 +26,7 @@ async def command_start_handler(message: Message) -> None:
             update_user_tasks_and_coins(user_id, 1, 200)
             set_initial_coins_received(user_id)
             await message.answer(
-                f"""congratulations, you are one of those who believed.\nfor your interest you received 200 coins.\ntelegram premium users receive +100 to the base reward.
-        there is no referral program here.\n27,500,000 coins have been allocated for this distribution.\ncoins that are not collected in time will be burned.\n{html.bold('glhf')}
-                """
+                f"""congratulations, you are one of those who believed.\nfor your interest you received 200 tickets\nthere is no referral program here.\n{html.bold('glhf')}"""
             )
         else:
             await message.answer("You have already received your initial 200 coins.")
